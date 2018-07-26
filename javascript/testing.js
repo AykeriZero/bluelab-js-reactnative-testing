@@ -66,3 +66,13 @@ bar.a = "bar outside";
 var a = "global";
 
 bar(foo);
+
+//constructed vs primative objects
+
+var stringPrim = "hello";
+typeof stringPrim; //string
+stringPrim instanceof String; //false
+
+var strObj = new String("hello");
+typeof strObj; //object
+strObj instanceof String; //true
