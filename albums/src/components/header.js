@@ -1,9 +1,8 @@
-
+//Header component to display a header at the top of the app
 
 //import libraries for making a header
 import React from 'react';
 import { Text, View } from 'react-native';
-
 
 //make a header
 const Header = (props) => (
