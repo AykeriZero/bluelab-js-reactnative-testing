@@ -20,6 +20,8 @@ class AlbumList extends Component {
   }
 
   render() {
+    console.log(this.state.albums);
+
     return (
       <View>
         {this.renderAlbums()}

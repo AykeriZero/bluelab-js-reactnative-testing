@@ -3,15 +3,15 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Card = () => (
+const Card = (props) => (
   <View style={styles.containerStyle}>
-
+    {props.children}
   </View>
 );
 
 const styles = {
   containerStyle: {
-    borderWith: 1,
+    borderWidth: 1,
     borderRadius: 2,
     borderColor: '#ddd',
     borderBottomWidth: 0,
