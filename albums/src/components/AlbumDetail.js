@@ -19,7 +19,7 @@ const AlbumDetail = ({ album }) => {
 
   return (
     <Card>
-
+      {/*Card Section for the header of the album detail*/}
       <CardSection>
 
         <View style={thumbnailContainterStyle}>
