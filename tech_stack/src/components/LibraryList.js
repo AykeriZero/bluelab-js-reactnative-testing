@@ -3,11 +3,16 @@
 import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import { Card, CardSection } from './common'; 
+import { Card } from './common';
+import ListItem from './ListItem';
 
 class LibraryList extends Component {
-  renderItem(library) {
-
+  renderItem({ item }) {
+    return (
+      <ListItem
+        library={item}
+      />
+    );
   }
 
   render() {
@@ -15,7 +20,7 @@ class LibraryList extends Component {
       <FlatList
         data={this.props.libraries}
         renderItem={this.renderItem}
-        keyExtractor={(library) => library.id}
+        keyExtractor={(library) => library.id.toString()}
       />
     );
   }
