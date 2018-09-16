@@ -8,11 +8,7 @@ import ListItem from './ListItem';
 
 class LibraryList extends Component {
   renderItem({ item }) {
-    return (
-      <ListItem
-        library={item}
-      />
-    );
+    return <ListItem library={item} />;
   }
 
   render() {
