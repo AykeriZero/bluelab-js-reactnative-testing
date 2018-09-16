@@ -1,3 +1,1 @@
-export default () => {
-  return null;
-}
+export default () => null;

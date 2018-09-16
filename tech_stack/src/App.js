@@ -6,8 +6,7 @@ import reducers from './reducers';
 import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
 
-const App = () => {
-  return (
+const App = () => (
     <Provider store={createStore(reducers)}>
       <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
@@ -15,6 +14,5 @@ const App = () => {
       </View>
     </Provider>
   );
-};
 
 export default App;
