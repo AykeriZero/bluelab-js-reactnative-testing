@@ -10,7 +10,9 @@ class ListItem extends Component {
 
     if (expanded) {
       return (
-        <Text>{library.description}</Text>
+        <CardSection>
+          <Text>{library.description}</Text>
+        </CardSection>
       );
     }
   }
@@ -20,18 +22,20 @@ class ListItem extends Component {
     const { id, title } = this.props.library;
 
     return (
-      <TouchableWithoutFeedback
-        onPress={() => this.props.SelectLibrary(id)}
-      >
-        <View>
-          <CardSection>
-            <Text style={titleStyle}>
-              {title}
-            </Text>
-          </CardSection>
-          {this.renderDescription()}
-        </View>
-      </TouchableWithoutFeedback>
+      <View>
+        <TouchableWithoutFeedback
+          onPress={() => this.props.SelectLibrary(id)}
+        >
+          <View>
+            <CardSection>
+              <Text style={titleStyle}>
+                {title}
+              </Text>
+            </CardSection>
+          </View>
+        </TouchableWithoutFeedback>
+        {this.renderDescription()}
+      </View>
     );
   }
 }
