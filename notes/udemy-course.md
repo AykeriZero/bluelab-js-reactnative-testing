@@ -18,7 +18,8 @@ import { FlatList } from 'react-native'
 
 # Scaleable Navigation
 
+## allow redux to handle state calculations
 
+* call action creator
 
-
-
+by convention, the names of action types are kept in a file called types.js in the actions folder
