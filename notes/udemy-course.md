@@ -31,5 +31,20 @@ call action creator to change state
 redux for asyncronous action creator
 middleware
 
+# Navigation in React Navigation is not the Best
+
+## Using React-native-router-flux
+
+* authentication flow
+* main flow
+
+Scene
+
+* component in router-flux
+* one scene per component
+
+# Firebase Data Store
+
+* JSON data store
 
 
