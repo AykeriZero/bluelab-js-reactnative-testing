@@ -23,3 +23,13 @@ import { FlatList } from 'react-native'
 * call action creator
 
 by convention, the names of action types are kept in a file called types.js in the actions folder
+
+call action creator to change state
+
+## Redux thunk
+
+redux for asyncronous action creator
+middleware
+
+
+
