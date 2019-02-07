@@ -1,7 +1,7 @@
 # bluelab-js-reactnative-testing
 A repository to keep test code for learning Javascript and React Native
 
-All react native projects follow Stephen Grider's udemy course: The Complete React Native and Redux Course
+# All react native projects follow Stephen Grider's udemy course: The Complete React Native and Redux Course
 
 There are currently three react-native apps in this repository -- albums, auth, and tech stacks, manager
 
